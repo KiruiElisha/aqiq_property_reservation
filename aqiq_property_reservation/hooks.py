@@ -139,7 +139,7 @@ doc_events = {
 		"on_cancel": "aqiq_property_reservation.aqiq_property_reservation.rest.sales_invoice_on_cancel", 
 	},
 	"Delivery Note": {
-		"on_submit": "aqiq_property_reservationaqiq_property_reservation.rest.delivery_note_on_submit"
+		"on_submit": "aqiq_property_reservation.aqiq_property_reservation.rest.delivery_note_on_submit"
 	},
 	"Stock Entry": {
 		"validate": "aqiq_property_reservation.aqiq_property_reservation.rest.stock_entry_validate",
