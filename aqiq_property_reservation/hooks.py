@@ -243,3 +243,15 @@ doc_events = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["dt", "in", ["Item", "Job Card", "Workstation"]],
+            ["is_system_generated", "=", 0]
+        ]
+    },   
+ 
+
+]
