@@ -251,7 +251,14 @@ fixtures = [
             ["dt", "in", ["Item", "Job Card", "Workstation"]],
             ["is_system_generated", "=", 0]
         ]
-    },   
+    },
+    {
+        "dt": "Client Script",
+        "filters": [
+            ["name", "in", ["SO Filters"]]
+        ]
+    },
+      
  
 
 ]

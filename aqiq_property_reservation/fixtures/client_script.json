@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Sales Order",
+  "enabled": 1,
+  "modified": "2024-10-01 13:19:43.551327",
+  "module": "AQIQ Property Reservation",
+  "name": "SO Filters",
+  "script": "frappe.ui.form.on('Sales Order', {\r\n    refresh: function(frm) {\r\n        frm.fields_dict['items'].grid.get_field('item_code').get_query = function(doc, cdt, cdn) {\r\n            return {\r\n                filters: [\r\n                    ['Item', 'custom_unit_status', 'not in', ['Reserved', 'Booked', 'Sold']]\r\n                ]\r\n            };\r\n        };\r\n    }\r\n});\r\n",
+  "view": "Form"
+ }
+]
