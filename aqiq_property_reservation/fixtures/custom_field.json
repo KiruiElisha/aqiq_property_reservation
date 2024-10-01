@@ -38,7 +38,7 @@
   "name": "Item-custom_unit_status",
   "no_copy": 0,
   "non_negative": 0,
-  "options": "Available\nReserved\nBooked\nSold",
+  "options": "Available\nLeased\nBooked\nSold",
   "permlevel": 0,
   "precision": "",
   "print_hide": 0,

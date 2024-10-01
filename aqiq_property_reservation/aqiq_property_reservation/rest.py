@@ -6,7 +6,7 @@ from frappe import _
 def sales_order_on_submit(self, method):
 	for i in self.items:
 		item = frappe.get_doc('Item', i.item_code)
-		item.custom_unit_status = 'Reserved'
+		item.custom_unit_status = 'Leased'
 		item.save(ignore_permissions=True)
 		item.reload()
 
